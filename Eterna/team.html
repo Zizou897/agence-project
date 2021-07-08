@@ -123,7 +123,7 @@
             <small>Trouvez le prestataire idéal, partout en France, en quelques minutes.</small>
             <h2>Réservez vos services de ménage ponctuels ou récurrents</h2>
             <div class="a-search-box">
-              <input class="a-search-txt" type="text" name="search" placeholder="Recherher un emploi" id="search">
+              <input class="a-search-txt" type="text"  name="search" placeholder="" id="search">
               <button class='a-search-btn'><i class="fas fa-search"></i></button>
             </div>
           </div>
@@ -143,9 +143,9 @@
      <section id="space">
       <div class="container">
         <ul>
-          <li> <i class=""></i>prestataire qualifié</li>
-          <li> <i class=""></i>Prestations assurées</li>
-          <li> <i class=""></i>Service encadré</li>
+          <li> <i class="fas fa-search"></i> prestataire qualifié</li>
+          <li> <i class="fas fa-search"></i> Prestations assurées</li>
+          <li> <i class="fas fa-search"></i> Service encadré</li>
         </ul>
       </div>
     </section><!-- End Space Section -->
@@ -254,6 +254,25 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    let i = 0;
+    let placeholder= "";
+    const txt = 'Recherher un emploi';
+    const speed = 100;
+
+    function type(){
+      placeholder += txt.charAt(i);
+      document.getElementById("search").setAttribute("placeholder",placeholder);
+      i++;
+      setTimeout(type,speed);
+      
+     
+    }
+
+    type();
+  </script>
+
 
 </body>
 
