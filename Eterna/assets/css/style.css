@@ -359,7 +359,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 /*-------------------------------------------------------------
-# My section
+# My section my different modification by Azeez
 --------------------------------------------------------------*/
 #team .position{
   display: -webkit-flex;
@@ -417,8 +417,35 @@ h1, h2, h3, h4, h5, h6 {
 #team img {
   border-radius: 20px;
   height: 600px;
-  width:90%;
+  width: 100%;
 }
+
+/*--------------------------------------------------------------
+# Space Section my different modification by Azeez
+--------------------------------------------------------------*/
+
+#space {
+  width: 100%;
+  height: 20px;
+  border-top: thin solid #ddd;
+  border-bottom: thin solid #ddd;
+  display: flex;
+}
+
+#space ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#space ul li {
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 
 /*--------------------------------------------------------------
 # Hero Section
