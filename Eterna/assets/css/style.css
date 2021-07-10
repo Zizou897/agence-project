@@ -25,6 +25,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
+  
 }
 
 /*--------------------------------------------------------------
@@ -433,22 +434,52 @@ h1, h2, h3, h4, h5, h6 {
   height: 20px;
   border-top: thin solid #ddd;
   border-bottom: thin solid #ddd;
-  display: flex;
 }
 
 #space ul{
+  margin: 0;
+  padding: 0;
   display: flex;
+  list-style: none;
   align-items: center;
   justify-content: space-between;
 }
 
 #space ul li {
-  text-align: center;
-  text-decoration: none;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  
 }
+
+
+/*--------------------------------------------------------------
+# No Expensivemy different modification by Azeez
+--------------------------------------------------------------*/
+
+.card2{
+  border: none;
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+/*--------------------------------------------------------------
+# Prestations my different modification by Azeez
+--------------------------------------------------------------*/
+
+.tilte {
+  color: #000000;
+}
+
+#Prestations .card-img2 {
+  border: none;
+  height: 130px;
+  object-fit: cover;
+}
+
 
 
 /*--------------------------------------------------------------
@@ -456,7 +487,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   background-color: rgba(59, 59, 59, 0);
   overflow: hidden;
   padding: 0;
@@ -467,11 +498,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .carousel-item {
   width: 100%;
-  height: 70vh;
-  background-size: contain;
+  height: 100vh;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-position: center center;
 }
 
 #hero .carousel-item::before {
