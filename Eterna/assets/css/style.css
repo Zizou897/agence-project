@@ -1533,11 +1533,20 @@ section {
   position: fixed;
   right: 70px;
   bottom: 15px;
-  padding : 5px 20px;
-  border-radius: 25px;
+  padding : 7px 20px;
+  border-radius: 5px;
   z-index: 996;
+  background-color: #006400;
+  color: #f2f2f2;
+  border: none;
+  transition: 0.3s;
 }
-
+.info-box button:hover{
+  
+  background-color: #ee8b7a;
+  color: #f2f2f2;
+  
+}
 .contact .info-box:hover{
   color: #444444;
   border: thin solid #ddd;
