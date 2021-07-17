@@ -1521,6 +1521,14 @@ section {
   justify-content: space-between;
 }
 
+.contact .info-box{
+  padding: 20px  30px 10px;   
+  border: thin solid #ddd;
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.5s ease ;
+}
+
 .info-box button{
   position: fixed;
   right: 70px;
@@ -1528,8 +1536,6 @@ section {
   padding : 5px 20px;
   border-radius: 25px;
 }
-
-
 
 .contact .info-box:hover{
   color: #444444;
