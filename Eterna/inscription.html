@@ -15,6 +15,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -69,7 +70,7 @@
           <li><a href="about.html">A propos</a></li>
           <li><a href="service.html">Service</a></li>
           <li><a href="detail-service.html">detail</a></li>
-          <li><a href="#">Connexion</a></li>
+          <li><div type="button" class=" ml-4" data-bs-toggle="modal" data-bs-target="#connexion">Connexion</div></li>
           <li><a href="inscription.html">Inscription</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -100,37 +101,14 @@
         <div class="container">
           <div class="row rows-display section-title">
             <div class="col-lg-6 col-md-6 col-ms-12">
-              <div class="info-box  mb-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <div class="info-box  mb-4" >
                 <img src="assets/customer1.svg" class='img-svg' alt="" srcset=""><img src="customer.svg" alt="" srcset="">
                 <h3 class="fw-bold fs-5 text-dark">J'ai besoin d'un service</h3>
                 <p>Trouver le prestataire idéal pour vos service du quotidien</p>
               </div>
             </div>
 
-
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-            <div class="col-lg-6 col-md-6 col-ms-12">
+            <div class="col-lg-6 col-md-6 col-ms-12" data-bs-toggle= "modal" data-bs-target="#inscription">
               <div class="info-box  mb-4">
                 <img src="assets/toolbox-container-repair-box-tool-box-toolboxes-toolkit-tools-svgrepo-com.svg" class='img-svg' alt="" srcset="">
                 <h3 class="section-title2 fw-bold fs-5 text-dark">Devenir Jobber</h3>
@@ -138,12 +116,130 @@
               </div>
             </div>
           </div>
+          <p class="section-title"> Vous avez déjà un compte ? <span type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#connexion"> Connectez-vous</span></p>
         </div>
-        <p class="section-title "> Vous avez déjà un compte ? <a href=""> Connectez-vous</a></p>
       </div>
     </section><!-- End Contact Section -->
 
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="inscription" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="staticBackdropLabel">Inscription</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <form action="" method="post">
+              <div class="row">
+                <div class="input-group mb-3">
+                  
+                  <span class="input-group-text" id="basic-addon1"><i class="far fa-user"></i></span>
+                  <input type="text" class="form-control form-control-lg is-invalid" placeholder="Nom & Prénom" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"><i class="far fa-envelope"></i></span>
+                  <input type="text" class="form-control form-control-lg" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"><i class="fas fa-unlock-alt"></i></span>
+                  <input type="text" class="form-control form-control-lg" placeholder="Mot De Passe" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"><i class="fas fa-unlock-alt"></i></span>
+                  <input type="text" class="form-control form-control-lg" placeholder="Confirmé Mot De Passe" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 d-grid gap-2 pt-3">
+                  <button type="submit" class="btn btn-success  btn-lg">Inscription</button>
+                </div>
+              </div>
+              
+            </form>
+          </div>
+          <hr>
+          <div class="col-md-12">
+            
+            <p class="section-title">En vous inscrivant vous acceptez les conditions générales et la politique de confidentialité </p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="modal-footer text-start">
+        
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+
+
+<div class="modal fade center" id="connexion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="staticBackdropLabel">Connecxion</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <form action="" method="post">
+              <div class="row">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"><i class="far fa-envelope"></i></span>
+                  <input type="text" class="form-control form-control-lg" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"><i class="fas fa-unlock-alt"></i></span>
+                  <input type="text" class="form-control form-control-lg" placeholder="Mot De Passe" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-12 d-grid gap-2 pt-3">
+                  <button type="submit" class="btn btn-success  btn-lg">Connexion</button>
+                </div>
+                <p class="text-end"><a href="">mot de passe oublié ?</a></p>
+              </div>
+            </form>
+          </div>
+          <hr>
+          <div>
+            <p class="section-title"> Vous avez déjà un compte ? <a href="inscription.html"> inscrivez-vous</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <p class="section-title" data-bs-toggle= "modal" data-bs-target="#connexion"> Vous avez déjà un compte ? <a href="inscription.html"> inscrivez-vous</a></p>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
   </main><!-- End #main -->
+
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
