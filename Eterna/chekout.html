@@ -15,6 +15,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -92,81 +93,151 @@
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
-    <div class="container">
-      <form action="" method="post">
-        <div class="container bg-light pb-3">
-          <p class="fw-bold">Information personnelle</p>
-          <div class="row">
-            <div class="col-md-6">
-              <label for="firstname">Nom<span class="text-success">*</span></label>
-              <input type="text"class="form-control" name="" id="">
-            </div>
-            <div class="col-md-6">
-              <label for="lastname">Prenom<span class="text-success">*</span></label>
-              <input type="text"class="form-control" name="" id="">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <label for="adress">Adresse<span class="text-success">*</span></label>
-              <input type="text"class="form-control" name="" id="adress">
-            </div>
-            <div class="col-md-6">
-              <label for="phone">Téléphone<span class="text-success">*</span></label>
-              <input type="telephone"class="form-control" name="" id="phone">
-            </div>
-          </div>
+      <div class="container-md">
+        <div class="container-md ">
+          <div class="container-md">
+            <div class="container-md">
+              <div class="container-md">
+                <div class="container">
+                  <form action="" method="post">
+                    <div class="container bg-light border-card pb-3 mb-1">
+                      <p class="fw-bold">Information personnelle</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label for="firstname">Nom<span class="text-success">*</span></label>
+                          <input type="text"class="form-control" name="" id="">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="lastname">Prenom<span class="text-success">*</span></label>
+                          <input type="text"class="form-control" name="" id="">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label for="adress">Adresse<span class="text-success">*</span></label>
+                          <input type="text"class="form-control" name="" id="adress">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="phone">Téléphone<span class="text-success">*</span></label>
+                          <input type="telephone"class="form-control" name="" id="phone">
+                        </div>
+                      </div>
 
-          <div class="row">
-            <div class="col-md-12">
-              <label for="email">Email<span class="text-success">*</span></label>
-              <input type="email"class="form-control" name="" id="">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <label for="email">Email<span class="text-success">*</span></label>
+                          <input type="email"class="form-control" name="" id="">
+                        </div>
+                      </div>
+                    </div>
+                  
+                    
+                    <div class="container bg-light border-card pb-3 mb-1">
+                      <p class="fw-bold">Detail du besoin</p>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <label for="">De quel service avez-vous besoin ?</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label for="">A quel adresse le service doit-il etre rendu? <span class="text-secondary">(ne sera pas publie)</span> </label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="">Nombre de jobber</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+
+                      </div>
+                    </div>
+                
+
+                    <div class="container bg-light border-card pb-3 mb-1">
+                      <p class="fw-bold">Date et heure</p>
+                      <label for="">A quel adresse le service doit-il etre rendu? <span class="text-secondary">(ne sera pas publie)</span> </label>
+                      
+                      <div id="datepicker" data-date="12/03/2012"></div>
+                      <input type="hidden" id="my_hidden_input">
+
+                    </div>
+                    
+                    
+                      <div class="container bg-light border-card">
+                        <p class="fw-bold">Prix</p>
+                        <div class="container">
+                          <div class="wrapper-box">
+                            <div class="box1">
+                              <p class="fw-bold">Nombre d'heures estimées :</p>
+                              <div class="container out-box1">
+                                <button><i class="fas fa-minus"></i></button>
+                                  <div class="price-hours">
+                                    <h4>1h</h4>
+                                  </div> 
+                                <button><i class="fas fa-plus"></i></button>
+                              </div>
+                              <div class="section-title mt-3">Pour ce job, nous vous recommandons <span class="text-success fwb">1h</span></div>
+                              <p class="fw-bolder mt-3">Rémunération horaire par Jobber :</p>
+                              <div class="container out-box1 mb-3"> 
+                                <div class="price-hours">
+                                  <h4>3000fr/h</h4>
+                                </div> 
+                              </div>  
+                              <div class="section-title mt-3">Tarif horaire moyen préconisé : <span class="text-success fwb">3000fr</span></div>
+                            </div>
+                            <div class="box2">
+                              <div class="container out-box1">
+                                <div class="d-flex justify-content-between bd-highlight mb-2">
+                                  <div class=""><i class="fas fa-user px-2"></i><span class="fst-normal fw-medium">Rémunération Jobber</span></div>
+                                  <div class="fw-bold"><small>2x</small> 3000 fr</div>
+                                </div>
+                              </div>
+                              <div class=" container">
+                                <div class="container card-success mb-3"> 
+                                  <div class="d-flex justify-content-between  mb-1">
+                                    <div class=""><span class="card-service1">Frais de service<i class="fas fa-exclamation-circle px-1"></i></i></span></div>
+                                    <div class="card-service1"><small>2x </small> <span class="fs-6 fw-bold-800">500 fr</span> </div>
+                                  </div>                    
+                                    <small class="pb-2 card-service2">calculés selon la rémunération</small>                           
+                                </div>
+                              </div>
+                              <div class="traced"></div>
+                              <div class="container out-box1 mt-3">
+                                <div class="d-flex justify-content-between bd-highlight">
+                                  <div class="fw-bold"><span>Montant de votre offre</span></div>
+                                  <div class="bd-highlight text-secondary"><small>2x </small>3000 fr</div>
+                                </div>
+                              </div>
+                              <div class="container out-box1">
+                                <div class="d-flex justify-content-between bd-highlight mb-3">
+                                  <div class=""><small class="box1-jobber">Les jobbers sont susceptibles <br> de faire d'autres propositions</small></div>
+                                  <div class="fs-3 fw-bold">3000 fr</div>
+                                </div>
+                              </div>
+                              <div class="d-flex flex-column">
+                                <div class="mb-2"><i class="fas fa-check  icon px-2"></i>Prestation encadrée et profils vérifiés</div>
+                                <div class="mb-2"><i class="fas fa-check  icon px-2"></i> Votre service est assuré </div>
+                                <div class=""><i class="fas fa-check  icon px-2"></i>Service Client 7/7 de 08h à 22h</div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="traced">
-         
-        </div>
-         
-        <div class="container bg-light pb-3 pt-3">
-          <p class="fw-bold">Detail du besoin</p>
-          <div class="row">
-            <div class="col-md-12">
-              <label for="">De quel service avez-vous besoin ?</label>
-              <input type="text" class="form-control">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <label for="">A quel adresse le service doit-il etre rendu? <span class="text-secondary">(ne sera pas publie)</span> </label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="col-md-6">
-              <label for="">Nombre de jobber</label>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>...</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-
-          </div>
-        </div>
-        <div class="traced">
-         
-        </div>
-
-        <div class="container bg-light pt-3">
-          <p class="fw-bold">Date et heure</p>
-          <label for="">A quel adresse le service doit-il etre rendu? <span class="text-secondary">(ne sera pas publie)</span> </label>
-          
-          <div id="datepicker" data-date="12/03/2012"></div>
-          <input type="hidden" id="my_hidden_input">
-
-        </div>
-      </form>
-    </div>
+      </div>
     </section><!-- End Services Section -->
 
     <!-- ======= Our Skills Section ======= -->
