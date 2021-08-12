@@ -371,12 +371,12 @@
       },
       computed:{
         Service(){
-          prixSer = (this.prix * this.tva) / 100
+          prixSer = Math.floor((this.prix * this.tva) / 100)
           return prixSer * this.heure
         },
 
         Jobber(){
-          tauxSer = (this.prix * this.tva)/100
+          tauxSer = Math.floor((this.prix * this.tva)/100)
           prixJob = this.prix - tauxSer
           return prixJob * this.heure
         },
