@@ -147,11 +147,12 @@
                         </div>
                         <div class="col-md-6">
                           <label for="">Nombre de jobber</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                          <select class="form-select" aria-label="Default select example" v-model="nombreJobber">
+                            <option selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
                           </select>
                         </div>
 
@@ -186,7 +187,7 @@
                               <p class="fw-bolder mt-3">Rémunération horaire par Jobber :</p>
                               <div class="container out-box1 mb-3"> 
                                 <div class="price-hours">
-                                  <h4>3000fr/h</h4>
+                                  <h4>%{prix}fr/h</h4>
                                 </div> 
                               </div>  
                               <div class="section-title mt-3">Tarif horaire moyen préconisé : <span class="text-success fwb">3000fr</span></div>
@@ -195,14 +196,14 @@
                               <div class="container out-box1">
                                 <div class="d-flex justify-content-between bd-highlight mb-2">
                                   <div class=""><i class="fas fa-user px-2"></i><span class="fst-normal fw-medium">Rémunération Jobber</span></div>
-                                  <div class="fw-bold"><small>2x</small> 3000 fr</div>
+                                  <div class="fw-bold"><small v-if="nombreJobber > 1">%{nombreJobber}x </small> %{Jobber} fr</div>
                                 </div>
                               </div>
                               <div class=" container">
                                 <div class="container card-success mb-3"> 
                                   <div class="d-flex justify-content-between  mb-1">
                                     <div class=""><span class="card-service1">Frais de service<i class="fas fa-exclamation-circle px-1"></i></i></span></div>
-                                    <div class="card-service1"><small>2x </small> <span class="fs-6 fw-bold-800">500 fr</span> </div>
+                                    <div class="card-service1"><small v-if="nombreJobber > 1">%{nombreJobber}x </small> <span class="fs-6 fw-bold-800">%{Service} fr</span> </div>
                                   </div>                    
                                     <small class="pb-2 card-service2">calculés selon la rémunération</small>                           
                                 </div>
@@ -211,13 +212,13 @@
                               <div class="container out-box1 mt-3">
                                 <div class="d-flex justify-content-between bd-highlight">
                                   <div class="fw-bold"><span>Montant de votre offre</span></div>
-                                  <div class="bd-highlight text-secondary"><small>2x </small>3000 fr</div>
+                                  <div class="bd-highlight text-secondary" v-if="nombreJobber > 1"><small>%{nombreJobber}x </small>%{Service + Jobber} fr</div>
                                 </div>
                               </div>
                               <div class="container out-box1">
                                 <div class="d-flex justify-content-between bd-highlight mb-3">
                                   <div class=""><small class="box1-jobber">Les jobbers sont susceptibles <br> de faire d'autres propositions</small></div>
-                                  <div class="fs-3 fw-bold">3000 fr</div>
+                                  <div class="fs-3 fw-bold">%{total} fr</div>
                                 </div>
                               </div>
                               <div class="d-flex flex-column">
@@ -354,16 +355,35 @@
       el: '#formApp',
       data:{
         message:'cool',
-        heure:1
+        prix: 3000,
+        heure: 1,
+        nombreJobber: 1,
+        tva: 16.67,
       },
       delimiters:['%{', '}'],
       methods:{
         plus(){
           this.heure = this.heure + 1
-         
         },
         moins(){
           this.heure = this.heure - 1
+        }
+      },
+      computed:{
+        Service(){
+          prixSer = (this.prix * this.tva) / 100
+          return prixSer * this.heure
+        },
+
+        Jobber(){
+          tauxSer = (this.prix * this.tva)/100
+          prixJob = this.prix - tauxSer
+          return prixJob * this.heure
+        },
+
+        total(){
+          totalPrix = this.prix * this.heure
+          return totalPrix * this.nombreJobber
         }
       }
     })
