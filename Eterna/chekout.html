@@ -99,7 +99,7 @@
             <div class="container-md">
               <div class="container-md">
                 <div class="container">
-                  <form action="" method="post">
+                  <form action="" method="post" id="formApp">
                     <div class="container bg-light border-card pb-3 mb-1">
                       <p class="fw-bold">Information personnelle</p>
                       <div class="row">
@@ -136,8 +136,8 @@
                       <p class="fw-bold">Detail du besoin</p>
                       <div class="row">
                         <div class="col-md-12">
-                          <label for="">De quel service avez-vous besoin ?</label>
-                          <input type="text" class="form-control">
+                          <label for="">De quel service avez-vous besoin %{message}?</label>
+                          <input type="text" class="form-control" value="">
                         </div>
                       </div>
                       <div class="row">
@@ -176,11 +176,11 @@
                             <div class="box1">
                               <p class="fw-bold">Nombre d'heures estimées :</p>
                               <div class="container out-box1">
-                                <button><i class="fas fa-minus"></i></button>
+                                <button @click.prevent="moins"><i class="fas fa-minus"></i></button>
                                   <div class="price-hours">
-                                    <h4>1h</h4>
+                                    <h4>%{heure}h</h4>
                                   </div> 
-                                <button><i class="fas fa-plus"></i></button>
+                                <button @click.prevent='plus'><i class="fas fa-plus"></i></button>
                               </div>
                               <div class="section-title mt-3">Pour ce job, nous vous recommandons <span class="text-success fwb">1h</span></div>
                               <p class="fw-bolder mt-3">Rémunération horaire par Jobber :</p>
@@ -342,17 +342,31 @@
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+ 
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/vue.js"></script>
+ 
   <script src="assets/js/bootstrap-datepicker.js"></script>
   <script>
-    $('#datepicker').datepicker();
-    $('#datepicker').on('changeDate', function() {
-      $('#my_hidden_input').val(
-      $('#datepicker').datepicker('getFormattedDate')
-    );
-});
+    new Vue({
+      el: '#formApp',
+      data:{
+        message:'cool',
+        heure:1
+      },
+      delimiters:['%{', '}'],
+      methods:{
+        plus(){
+          this.heure = this.heure + 1
+         
+        },
+        moins(){
+          this.heure = this.heure - 1
+        }
+      }
+    })
   </script>
 
 </body>
