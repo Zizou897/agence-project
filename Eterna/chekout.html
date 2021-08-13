@@ -363,10 +363,19 @@
       delimiters:['%{', '}'],
       methods:{
         plus(){
-          this.heure = this.heure + 1
+          if(this.heure < 10){
+            this.heure = this.heure + 1
+          }
+        
         },
         moins(){
-          this.heure = this.heure - 1
+          if(this.heure == 1){
+            this.heure = 1
+          }
+          else{
+            this.heure = this.heure - 1
+          }
+          
         }
       },
       computed:{
