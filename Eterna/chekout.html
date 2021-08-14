@@ -161,8 +161,11 @@
           <p class="fw-bold">Date et heure</p>
           <label for="">A quel adresse le service doit-il etre rendu? <span class="text-secondary">(ne sera pas publie)</span> </label>
           
-          <div id="datepicker" data-date="12/03/2012"></div>
-          <input type="hidden" id="my_hidden_input">
+          <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker" inline="true">
+            <label for="example">Try me...</label>
+            <input placeholder="Select date" type="text" id="example" class="form-control">
+            <i class="fas fa-calendar input-prefix"></i>
+          </div>
 
         </div>
       </form>
@@ -274,7 +277,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/bootstrap-datepicker.js"></script>
   <script>
     $('#datepicker').datepicker();
     $('#datepicker').on('changeDate', function() {

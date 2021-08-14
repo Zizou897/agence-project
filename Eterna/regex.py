@@ -1,8 +1,5 @@
-import re 
+x = 10 
 
-
-regex = re.compile("[0-9]+\.[0-9]+")
-
-resultat = regex.findall("pi vaut 3.14 et  vaut 2.72")
-
-print(resultat)
+while x > 0:
+    print('bonjour')
+    x = x-1 
