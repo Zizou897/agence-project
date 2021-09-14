@@ -1294,6 +1294,11 @@ section {
   background: #9c3737;
   height: 500px;
 }
+#portfolio-flters li:nth-child(0),#portfolio-flters li:nth-child(1){
+  display: flex;
+  flex-direction: column;
+}
+
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 25px auto;
@@ -1443,6 +1448,15 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-info::after {
   bottom: 15px;
   right: 15px;
+}
+.fas{
+
+  margin-right: 20px;
+
+}
+
+.filter-app{
+  display: flex;
 }
 
 /*--------------------------------------------------------------
