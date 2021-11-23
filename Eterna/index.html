@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Eterna Bootstrap Template - Index</title>
+  <title>JAMOH</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -15,6 +15,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -29,6 +30,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style2.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Eterna - v4.3.0
@@ -61,7 +63,7 @@
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <h1><a href="index.html">Eterna</a></h1>
+        <h1><a href="index.html">Jamoh</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -70,11 +72,14 @@
         <ul>
           <li><a class="active" href="index.html">Aceuill</a></li>
           <li><a href="about.html">A propos</a></li>
-          <li><a href="service.html">Service</a></li>
-          <li><a href="detail-service.html">detail</a></li>
-          <li><a href="chekout.html">check</a></li>
           <li><a href="#">Connexion</a></li>
           <li><a href="inscription.html">Inscription</a></li>
+          <li>
+            <div class="a-search-box">
+              <input class="a-search-txt" type="text"  name="search" placeholder="" id="zipcodeInput">
+              <button class='a-search-btn'><i class="fas fa-search"></i></button>
+            </div>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -87,7 +92,7 @@
     <div class="hero-container">
       <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+       
 
         <div class="carousel-inner" role="listbox">
 
@@ -152,35 +157,74 @@
           <h2 class="fw-bold pt-5"> De quel service avez-vous besoin ?</h2>
           <p class=""> Pour chaque situation, trouvez le prestataire dont les compétences répondent <br> à vos attentes et à votre niveau d’exigence.</p>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" >
-            <div class="icon-box" style="background-image: url(assets/20-e8e98c9d1cf9069f52eeeb9826bcccc526915bed259858e7e44cbcfd04bc0c60.svg); background-size: cover; background-repeat:no-repeat">
-              <h4><a href="">Bricolage</a></h4>
+              <a href="detail-service.html">
+              <div class="icon-box box" style="background-image: url(assets/img/menage_pf.svg); background-size: cover; background-repeat:no-repeat">
+                <h4>Ménage</h4>
+              </div>
+            </a>
             </div>
-          </div>
+          
           <div class="col-lg-4 col-md-6 col-ms-12 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="icon-box" style="background-image: url(assets/22-6bc86dbb1390e1b1a506269134feece1e0ac5028143c9f65b81d52b887af1a87.svg); background-size: cover; background-repeat:no-repeat">  
-              <h4><a href="">Déménagement</a></h4>
-            </div>
+            <a href="detail-service.html">
+              <div class="icon-box" style="background-image: url(assets/img/jardinage_pf.svg); background-size: cover; background-repeat:no-repeat">  
+                <h4>Jardinage</h4>
+              </div>
+            </a>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-            <div class="icon-box" style="background-image: url(assets/23-2cef76ae43c8eca7e91cb445550a4a8931f7e7aea3a7e7c624fc7b155a989ddc.svg); background-size: cover; background-repeat:no-repeat">        
-              <h4><a href="">Ménage</a></h4>
-            </div>
+            <a href="detail-service.html">
+              <div class="icon-box" style="background-image: url(assets/img/cours_domicile_pf.svg); background-size: cover; background-repeat:no-repeat">        
+                <h4>Déménagement</h4>
+              </div>
+            </a>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box" style="background-image: url(assets/25-bbf612f1c76ab9f689d1a2acc2097c9b7044f394ef539605576d830d570d26d2.svg); background-size: cover; background-repeat:no-repeat">
-              <h4><a href="">Informatique</a></h4>
-            </div>
+            <a href="detail-service.html">
+              <div class="icon-box" style="background-image: url(assets/img/aide_domicile_pf.svg); background-size: cover; background-repeat:no-repeat">
+                <h4>Aide à Ddomicile</h4>
+              </div>
+            </a>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box" style="background-image: url(assets/28-7d5972fafb408b81cf6b28d3bee60843e4b0838fd4df54193e857620a89fb004.svg); background-size: cover; background-repeat:no-repeat">
-              <h4><a href="">Enfant</a></h4>
+            <a href="detail-service.html">
+              <div class="icon-box" style="background-image: url(assets/img/renovation_pf.svg); background-size: cover; background-repeat:no-repeat">
+                <h4>Rénovation</h4>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <a href="detail-service.html">
+              <div class="icon-box" style="background-image: url(assets/img/plomberie_pf.svg); background-size: cover; background-repeat:no-repeat">
+                <h4>Plomberie</h4>
+              </div>
+              </a>
+          </div>
+
+          <a href="detail-service.html">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <a href="detail-service.html">
+            <div class="icon-box" style="background-image: url(assets/img/electricite_pf.svg); background-size: cover; background-repeat:no-repeat">
+              <h4>Electricite</h4>
             </div>
+            </a>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box" style="background-image: url(assets/29-018d670dbb24035a918f3a89ca4dbec5e9e0423897d633ccdf5e273af001ac4d.svg); background-size: cover; background-repeat:no-repeat">
-              <h4><a href="">Cours particulier</a></h4>
+            <a href="detail-service.html">
+            <div class="icon-box" style="background-image: url(assets/img/informatique_pf.svg); background-size: cover; background-repeat:no-repeat">
+              <h4>Informatique</h4>
             </div>
+            </a>
           </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <a href="detail-service.html">
+              <div class="icon-box" style="background-image: url(assets/img/cours_domicile_pf.svg); background-size: cover; background-repeat:no-repeat">
+                <h4>Cours à omicile</h4>
+              </div>
+            </a>
+          </div>
+          
+
         </div>
       </div>
     </section><!-- End Services Section -->
@@ -446,6 +490,10 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/typewriter.js"></script>
+  <script>
+    new TypeWriter('#zipcodeInput', ['JAMOH', 'Trouver un emploi', 'Quel job voulez vous '], { writeDelay: 100 });
+  </script>
 
   <script>
     $(document).ready(function(){
