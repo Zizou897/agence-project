@@ -8,6 +8,8 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -543,7 +545,28 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 .a-hero {
-  height: 90vh;
+  height: 70vh;
+  position: relative;
+}
+
+
+.a-hero .box{
+  font-size: 3rem;
+  color: rgb(206, 223, 201);
+  margin: auto;
+  position: absolute;
+  top: 30%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#hero .btn-box{
+  background-color: #02640083;
+  color: rgb(206, 223, 201);
+  margin: auto;
+  position: absolute;
+  top: 70%;
+  font-family: 'Montserrat', sans-serif;
+  border-color:  #02640083;
 }
 /* 
 #hero .carousel-item {
