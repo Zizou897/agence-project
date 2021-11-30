@@ -568,6 +568,24 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   border-color:  #02640083;
 }
+
+#hero .btn-box:hover{
+  background-color: #026400ca;
+  border-color:  #026400ca;
+}
+
+@media screen and (max-width: 950px){
+  .a-hero .box{
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .a-hero .box{
+    font-size: 1.5rem;
+  }
+}
+
 /* 
 #hero .carousel-item {
   width: 100%;
