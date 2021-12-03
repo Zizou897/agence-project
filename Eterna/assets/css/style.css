@@ -364,6 +364,16 @@ h1, h2, h3, h4, h5, h6 {
 /*-------------------------------------------------------------
 # My section my different modification by Azeez
 --------------------------------------------------------------*/
+
+#navbar .ask-work{
+  background: #006400;
+  margin-left: 30px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: bolder;
+  color: #fff;
+}
+
 #team .position{
   display: -webkit-flex;
   align-items: center;
@@ -1374,37 +1384,82 @@ section {
 }
 #right
 {
-  background: #9c3737;
+ 
   height: 500px;
 }
 .portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 25px auto;
-  list-style: none;
-  text-align: center;
-  background: #f2f2f2;
-  padding: 2px 15px;
-  height:500px;
+  list-style:none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: block;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 400px;
+  max-width: 1000px;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
 }
 
 .portfolio #portfolio-flters li {
+  height:50px;
+  width:100%;
+  background: rgba(89, 89, 89, 0.358);
+  margin: 5px;
+  padding: 10px 20px;
   cursor: pointer;
-  display:block;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1;
-  color: #444444;
-  margin: 0 4px 8px 4px;
-  transition: all ease-in-out 0.3s;
-  border-radius: 5px;
-  padding: 5px;
-  
+  position: relative;
+  z-index: 1;
+  transition: all 1s
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: #006400;
-  color: #fff;
+.portfolio #portfolio-flters li::before {
+  content: '';
+  position: absolute;
+  height:100%;
+  width:3px;
+  top:0;
+  right:0;
+  background: #02b36ca3;
+  z-index: -1;
+  
 }
+/* background: -webkit-linear-gradient(left, #bdbdbd, #00b16aa3);
+  background-image: -o-linear-gradient(left,#bdbdbd, #00b16aa3);
+  background-image: linear-gradient(to right,#bdbdbd,#00b16aa3);
+  font-size: 1.2rem; */
+
+.portfolio #portfolio-flters li.filter-active {
+  background: #0acc7ea3;
+  -webkit-transition: font-size 0.5s;
+  -o-transition: font-size 0.5s;
+  transition: font-size 0.5s;
+}
+
+
+.portfolio #portfolio-flters li:hover{
+  background: #02b36ca3;
+  -webkit-transition: font-size 0.5s;
+  -o-transition: font-size 0.5s;
+  transition: font-size 0.5s;
+}
+
+
+/* .portfolio #portfolio-flters li:hover::before{
+  width:100%;
+  z-index:-1;
+  transition: all 1s
+} */
 
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;

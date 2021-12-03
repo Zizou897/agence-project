@@ -64,13 +64,16 @@
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
-     <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="active" href="index.html">Aceuill</a></li>
-          <li><a href="about.html">A propos</a></li>
-          <li><a href="service.html">Service</a></li>
-          <li><a href="#">Connexion</a></li>
-          <li><a href="inscription.html">Inscription</a></li>
+          <li><a href="inscription.html">Inscription | Connexion</a></li>
+          <li><a href="service.html"  class="ask-work" >Demander un servive</a></li>
+          <li>
+            <div class="a-search-box">
+              <input class="a-search-txt" type="text"  name="search" placeholder="" id="zipcodeInput">
+              <button class='a-search-btn'><i class="fas fa-search"></i></button>
+            </div>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -85,10 +88,10 @@
       <div class="container">
 
         <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>Portfolio</li>
+          <li><a href="index.html">Accueil</a></li>
+          <li>Service</li>
         </ol>
-        <h2>Portfolio</h2>
+        <h2>Service</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -102,9 +105,10 @@
                 <div class="col-lg-12">
                   <ul id="portfolio-flters">
                     <li data-filter="*" class="filter-active"><h4>Serives</h4></li>
-                    <li data-filter=".filter-app"><i class="fas fa-home"></i> <span>Deme</span></li>
-                    <li data-filter=".filter-card" class=""><i class="fas fa-apple-alt"></i> <span>Card</span></li>
-                    <li data-filter=".filter-web"><i class="fas fa-home"></i> <span>Web</span></li>
+                    <li data-filter=".filter-app" ><i class="fas fa-home"></i> <span>Démenagement</span></li>
+                    <li data-filter=".filter-card" class=""><i class="fas fa-apple-alt"></i> <span>Cour à domicile</span></li>
+                    <li data-filter=".filter-web"><i class="fas fa-home"></i> <span>servir aux personne agées</span></li>
+                    <li data-filter=".filter-we"><i class="fas fa-home"></i> <span>Jardinage</span></li>
                   </ul>
                 </div>
               </div>
@@ -113,129 +117,120 @@
               <div class="row portfolio-container">
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>App 1</h4>
-                      <p>App</p>
-                      <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                        <a href="detail-service.html" title="More Details"><i class="bx bx-link"></i></a>
-                      </div>
+                  <div class="card  text-white">
+                    <a href="chekout.html">
+                    <img src="assets/4001-f145744534c445655cdfaed5133716783f0adace552d3579369700fc17150117.svg" class="card-img card-img2" alt="...">
+                    <div class="card-img-overlay">
                     </div>
+                  </a>
                   </div>
+                  <p> <span class="fw-bold">Ménage à domicile</span> <br>
+                    <small class="pt-0">Prix moyen 1000 fcfa-5000 fcfa</small>
+                  </p>
                 </div>
       
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Web 3</h4>
-                      <p>Web</p>
-                      <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                        <a href="detail-service.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <div class="card  text-white">
+                    <a href="chekout.html">
+                      <img src="assets/4003-c7f4b21f77e6e212372a83ad78327fd134a467a598615cf930adeb2f1dadbbbd.svg" class="card-img card-img2" alt="...">
+                      <div class="card-img-overlay">
                       </div>
-                    </div>
+                    </a>
                   </div>
+                  <p> <span class="fw-bold">Blanchisserie</span> <br>
+                    <small class="pt-0">Prix moyen 1000 fcfa-5000 fcfa</small>
+                  </p>
                 </div>
       
                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>App 2</h4>
-                      <p>App</p>
-                      <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                        <a href="detail-service.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <div class="card  text-white">
+                    <a href="chekout.html">
+                      <img src="assets/img/jardinage_pf.svg" class="card-img card-img2" alt="...">
+                      <div class="card-img-overlay">
                       </div>
-                    </div>
+                    </a>
                   </div>
+                  <p> <span class="fw-bold">Ménage à domicile</span> <br>
+                    <small class="pt-0">Prix moyen 1000 fcfa-5000 fcfa</small>
+                  </p>
                 </div>
       
                 <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Card 2</h4>
-                      <p>Card</p>
-                      <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                        <a href="detail-service.html" title="More Details"><i class="bx bx-link"></i></a>
-                      </div>
+                  <div class="card  text-white">
+                    <a href="chekout.html">
+                      <img src="assets/4099-25478e06c7ed231cc68229dd9fbf73a19a90834c9991db87138da08ad6de0ed3.svg" class="card-img card-img2" alt="...">
+                      <div class="card-img-overlay">
                     </div>
+                    </a>
                   </div>
+                  <p> <span class="fw-bold">Entrétien bureau</span> <br>
+                    <small class="pt-0">Prix moyen 1000 fcfa-5000 fcfa</small>
+                  </p>
                 </div>
       
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Web 2</h4>
-                      <p>Web</p>
-                      <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                        <a href="detail-service.html" title="More Details"><i class="bx bx-link"></i></a>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-we">
+                  <div class="card  text-white">
+                    <a href="chekout.html">
+                      <img src="assets/img/aide_domicile_pf.svg" class="card-img card-img2" alt="...">
+                      <div class="card-img-overlay">
                       </div>
-                    </div>
+                    </a>
                   </div>
+                  <p> <span class="fw-bold">Lavage auto</span> <br>
+                    <small class="pt-0">Prix moyen 1000 fcfa-5000 fcfa</small>
+                  </p>
                 </div>
       
                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>App 3</h4>
-                      <p>App</p>
-                      <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                        <a href="detail-service.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <div class="card  text-white">
+                    <a href="chekout.html">
+                      <img src="assets/img/electricite_pf.svg" class="card-img card-img2" alt="...">
+                      <div class="card-img-overlay">
                       </div>
-                    </div>
+                    </a>
                   </div>
+                  <p> <span class="fw-bold">Lavage auto</span> <br>
+                    <small class="pt-0">Prix moyen 1000 fcfa-5000 fcfa</small>
+                  </p>
                 </div>
       
                 <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Card 1</h4>
-                      <p>Card</p>
-                      <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                        <a href="detail-service.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <div class="card  text-white">
+                    <a href="chekout.html">
+                      <img src="assets/img/plomberie_pf.svg" class="card-img card-img2" alt="...">
+                      <div class="card-img-overlay">
                       </div>
-                    </div>
+                    </a>
                   </div>
+                  <p> <span class="fw-bold">Lavage auto</span> <br>
+                    <small class="pt-0">Prix moyen 1000 fcfa-5000 fcfa</small>
+                  </p>
                 </div>
       
                 <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Card 3</h4>
-                      <p>Card</p>
-                      <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                        <a href="detail-service.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <div class="card  text-white">
+                    <a href="chekout.html">
+                      <img src="assets/img/informatique_pf.svg" class="card-img card-img2" alt="...">
+                      <div class="card-img-overlay">
                       </div>
-                    </div>
+                    </a>
                   </div>
+                  <p> <span class="fw-bold">Blanchisserie</span> <br>
+                    <small class="pt-0">Prix moyen 1000 fcfa-5000 fcfa</small>
+                  </p>
                 </div>
       
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Web 3</h4>
-                      <p>Web</p>
-                      <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                        <a href="detail-service.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <div class="card  text-white">
+                    <a href="chekout.html">
+                      <img src="assets/img/cours_domicile_pf.svg" class="card-img card-img2" alt="...">
+                      <div class="card-img-overlay">
                       </div>
-                    </div>
+                    </a>
                   </div>
+                  <p> <span class="fw-bold">Blanchisserie</span> <br>
+                    <small class="pt-0">Prix moyen 1000 fcfa-5000 fcfa</small>
+                  </p>
                 </div>
       
               </div>
@@ -248,10 +243,10 @@
     <section id="clients" class="clients">
       <div class="container">
 
-        <div class="section-title">
+        <!-- <div class="section-title">
           <h2>Clients</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
+        </div> -->
 
         <div class="clients-slider swiper-container">
           <div class="swiper-wrapper align-items-center">
