@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -27,6 +27,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style2.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Eterna - v4.3.0
@@ -91,7 +92,7 @@
           <li><a href="index.html">Accueil</a></li>
           <li>Faire votre choix</li>
         </ol>
-        <h2>Contact</h2>
+        <!-- <h2>Bienvenue chez JAMOH</h2> -->
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -100,27 +101,56 @@
     <section id="contact" class="contact">
       <div class="container">
        <h2 class="section-title section-title2 title2">Bienvenue chez JAMOH</h2>
-        <div class="container">
-          <div class="row rows-display section-title">
-            <div class="col-lg-6 col-md-6 col-ms-12">
-              <div class="info-box  mb-4" >
-                <a href="service.html">
-                <img src="assets/customer1.svg" class='img-svg' alt="" srcset=""><img src="customer.svg" alt="" srcset="">
-                <h3 class="fw-bold fs-5 text-dark">J'ai besoin d'un service</h3>
-                <p>Trouver le prestataire idéal pour vos service du quotidien</p>
-                </a>
-              </div>
-            </div>
+        <div id="center" class="container">
+          
+          <p class="text-start">Connectez-vous pour accéder à votre compte</p>
+          <div class="row rows-display section-title ">
+            <section class="row">
+              <form class="form-container" action="" method="post">
+                <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                      <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control form-control-lg " id="validationServer01" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-group mb-3"> 
+                    <input type="text" class="form-control form-control-lg " placeholder="Mot De Passe" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+                <p class="text-end"><a href="">mot de passe oublié ?</a></p>
+                
+               
+                <div class="row">
 
-            <div class="col-lg-6 col-md-6 col-ms-12" data-bs-toggle= "modal" data-bs-target="#inscription">
-              <div class="info-box  mb-4">
-                <img src="assets/toolbox-container-repair-box-tool-box-toolboxes-toolkit-tools-svgrepo-com.svg" class='img-svg' alt="" srcset="">
-                <h3 class="section-title2 fw-bold fs-5 text-dark">Devenir Jobber</h3>
-                <p>Augmenter vos revenus en rendant des services près de chez vous</p>
-              </div>
-            </div>
+                  <div class="col-md-12 gap-2 pt-3">
+                    <button type="submit" class="btn btn-success  btn-lg">Se connecter</button>
+                  </div>
+                  
+                </div>
+              </form>
+            </section>
           </div>
-          <p class="section-title"> Vous avez déjà un compte ? <span type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#connexion"> Connectez-vous</span></p>
+          <!-- <p class="section-title"> Vous avez déjà un compte ? <span type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#connexion"> Connectez-vous</span></p> -->
+        </div>
+        <div class="container">
+          <div class="container">
+          <hr>
+          <p class="text-start fw-bold">Je n'ai pas de compte</p>
+          <div>
+            Vous voulez etre un Jobber chez JAMOH en vu d'augmenter vos revenus
+            en ayant plus de Jobes, veillez creer votre compte en cliquant sur
+            Je Cree Mon Compte
+          </div>
+          <div class="col-md-12 pt-3 section-title">
+            <button type="submit" class="btn btn-success  btn-lg ">Je Cree Mon Compte</button>
+          </div>
+        </div>
         </div>
       </div>
     </section><!-- End Contact Section -->
@@ -345,6 +375,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    $('.alert').alert()
+  </script>
 
 </body>
 
