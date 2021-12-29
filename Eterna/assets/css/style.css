@@ -565,7 +565,11 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 .a-hero {
+<<<<<<< Updated upstream
   height: 100vh;
+=======
+  height: 90vh;
+>>>>>>> Stashed changes
   position: relative;
 }
 
